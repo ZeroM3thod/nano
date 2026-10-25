@@ -1,0 +1,1 @@
+import type {Metadata} from "next"; import {ProgressView} from "../../components/progress-view"; export const metadata:Metadata={title:"Progress",description:"Review your learning progress on this device."}; export default function Progress(){return <ProgressView/>}

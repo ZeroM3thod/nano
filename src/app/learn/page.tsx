@@ -1,0 +1,3 @@
+import type { Metadata } from "next"; import { topics } from "../../../data/topics"; import { Quiz } from "../../components/quiz";
+export const metadata: Metadata = { title: "Learn", description: "Plain-English lessons in everyday finance." };
+export default function Learn(){return <><p className="eyebrow">LEARNING LIBRARY</p><h1 className="page-title">Learn the essentials.</h1><p className="intro">Short, original lessons. One idea at a time.</p>{topics.map(t=><section id={t.slug} key={t.slug}><article><span className="eyebrow">TOPIC</span><h2>{t.title}</h2><p>{t.intro}</p>{t.lessons.map((l,i)=><div key={l.title}><h3>{i+1}. {l.title}</h3><p>{l.body}</p></div>)}<Quiz topic={t}/></article></section>)}</>}

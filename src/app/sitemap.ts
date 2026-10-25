@@ -1,0 +1,1 @@
+import type { MetadataRoute } from "next"; export default function sitemap():MetadataRoute.Sitemap{return ["","learn","tools","progress","glossary","about","privacy","terms","contact","offline"].map(path=>({url:`https://qountex.example/${path}`,lastModified:new Date("2026-10-25")}))}

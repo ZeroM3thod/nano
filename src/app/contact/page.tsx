@@ -1,0 +1,1 @@
+import type {Metadata} from "next"; import {contactEmail} from "../../../data/config"; export const metadata:Metadata={title:"Contact",description:"Contact Qountex."}; export default function Contact(){return <><h1 className="page-title">Contact</h1><p>Questions about Qountex? Email <a href={`mailto:${contactEmail}`}>{contactEmail}</a>.</p></>}

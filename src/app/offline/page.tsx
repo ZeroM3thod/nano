@@ -1,0 +1,1 @@
+import type {Metadata} from "next"; import Link from "next/link"; export const metadata:Metadata={title:"Offline",description:"Qountex offline page."}; export default function Offline(){return <><h1 className="page-title">You’re offline.</h1><p className="intro">This page isn’t available yet. Reconnect, then try again.</p><Link href="/">Return home</Link></>}
